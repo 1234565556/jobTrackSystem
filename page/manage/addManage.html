@@ -14,84 +14,111 @@
     <div class="layuimini-main">
 
         <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-            <legend>添加学生</legend>
+            <legend>添加回访记录</legend>
         </fieldset>
 
         <form class="layui-form" action="">
             <div class="layui-form-item">
-                <label class="layui-form-label"><span style="color: red">*</span>班级</label>
+                <label class="layui-form-label">被回访人学号</label>
                 <div class="layui-input-block">
-                    <input id="cno" type="text" name="cno" lay-verify="title" autocomplete="off" placeholder="请输入班级编号" class="layui-input">
+                    <input id="cno" type="text" name="cno" lay-verify="title" autocomplete="off" placeholder="请输入被回访学生学号" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label"><span style="color: red">*</span>学号</label>
+                <label class="layui-form-label">被回访人姓名</label>
                 <div class="layui-input-block">
-                    <input id="sno" type="text" name="sno" lay-verify="title" autocomplete="off" placeholder="请输入学号" class="layui-input">
+                    <input id="sno" type="text" name="sno" lay-verify="title" autocomplete="off"  class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label"><span style="color: red">*</span>姓名</label>
+                <label class="layui-form-label">班级</label>
                 <div class="layui-input-block">
-                    <input id="name" type="text" name="name" lay-verify="title" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+                    <input id="class" type="text" name="name" lay-verify="title" autocomplete="off"  class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">单选框</label>
+                <label class="layui-form-label">专业</label>
                 <div class="layui-input-block">
-                    <input type="radio" name="sex" value="男" title="男" checked="">
-                    <input type="radio" name="sex" value="女" title="女">
+                    <input id="special" type="text" name="name" lay-verify="title" autocomplete="off"  class="layui-input">
                 </div>
             </div>
 
-
-
             <div class="layui-form-item">
-                <label class="layui-form-label">出生日期</label>
+                <label class="layui-form-label">年级</label>
                 <div class="layui-input-block">
-                    <input type="text" name="date" id="date1" autocomplete="off" class="layui-input" placeholder="请选择出生日期" readonly>
+                    <input id="grade" type="text" name="name" lay-verify="title" autocomplete="off"  class="layui-input">
                 </div>
             </div>
 
+            <div class="layui-form-item">
+                <label class="layui-form-label">现就职公司</label>
+                <div class="layui-input-block">
+                    <input id="company" type="text" name="name" lay-verify="title" autocomplete="off" placeholder="请输入现入职公司" class="layui-input">
+                </div>
+            </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">籍贯</label>
+                <label class="layui-form-label">现工作城市</label>
                 <div class="layui-input-block">
-                    <input id="classTeacher" type="text" name="classTeacher" lay-verify="title" autocomplete="off" placeholder="请输入籍贯" class="layui-input">
+                    <input id="city" type="text" name="name" lay-verify="title" autocomplete="off" placeholder="请输入现工作城市" class="layui-input">
                 </div>
             </div>
+
             <div class="layui-form-item">
-                <label class="layui-form-label">QQ</label>
+                <label class="layui-form-label">现基本薪资</label>
                 <div class="layui-input-block">
-                    <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input" placeholder="请输入QQ号">
+                    <input id="salary" type="text" name="name" lay-verify="title" autocomplete="off" placeholder="请输入基本薪资" class="layui-input">
                 </div>
             </div>
+
             <div class="layui-form-item">
-                <label class="layui-form-label">微信</label>
+                <label class="layui-form-label">现综合薪资</label>
                 <div class="layui-input-block">
-                    <input id="instructor" type="text" name="instructor" lay-verify="title" autocomplete="off" placeholder="请输入微信号" class="layui-input">
+                    <input id="sum" type="text" name="name" lay-verify="title" autocomplete="off" placeholder="请输入综合薪资" class="layui-input">
                 </div>
             </div>
+
             <div class="layui-form-item">
-                <label class="layui-form-label">联系方式</label>
+                <label class="layui-form-label">现岗位类型</label>
                 <div class="layui-input-block">
-                    <input type="tel" name="instructorPhone" lay-verify="required|phone" autocomplete="off" class="layui-input" placeholder="请输入联系方式">
+                    <input id="type" type="text" name="name" lay-verify="title" autocomplete="off" placeholder="请输入岗位类型，例如开发岗、实施岗等" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">现职位类型</label>
+                <div class="layui-input-block">
+                    <input id="type1" type="text" name="name" lay-verify="title" autocomplete="off" placeholder="请输入职位类型，例如初级工程师、中级工程师、项目经理等" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item layui-form-text">
-                <label class="layui-form-label">备注</label>
+                <label class="layui-form-label">回访内容</label>
                 <div class="layui-input-block">
-                    <textarea placeholder="请输入备注" class="layui-textarea"></textarea>
+                    <textarea placeholder="请输入具体回访交谈内容" class="layui-textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">回访人</label>
+                <div class="layui-input-block">
+                    <input id="name" type="text" name="name" lay-verify="title" autocomplete="off" placeholder="请输入回访人姓名" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">回访时间</label>
+                <div class="layui-input-block">
+                    <input type="text" name="date" id="date1" autocomplete="off" class="layui-input" placeholder="请选择回访时间" readonly>
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit="" lay-filter="demo1">创建学生信息</button>
+                    <button class="layui-btn" lay-submit="" lay-filter="demo1">创建回访记录</button>
                     <button type="reset" class="layui-btn layui-btn-primary">重置信息</button>
                 </div>
             </div>
