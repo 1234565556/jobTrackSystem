@@ -94,7 +94,26 @@
               "target": "_self"
         }
       ]
+    },
+    {
+      "title": "跟踪回访管理",
+      "icon": "fa fa-tasks",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "回访记录添加",
+          "href": "page/manage/addManage.html",
+          "icon": "fa fa-plus-square",
+          "target": "_self"
+        },
+        {
+          "title": "回访记录维护",
+          "href": "page/manage/findManage.html",
+          "icon": "fa fa-search-plus",
+          "target": "_self"
+        }
+      ]
     }
-
   ]
 }
